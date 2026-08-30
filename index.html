@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Brothers Finserv Verification Agency</title>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Brothers Finserv Verification Agency
+</title>
 
 <meta name="description"
 content="Brothers Finserv Verification Agency provides professional Document, Resident, RCU, Address, Business and Field Verification Services across Bihar, Assam, Jharkhand, West Bengal, Uttar Pradesh and Madhya Pradesh.">
 
 <style>
+
+/* =========================
+   BASIC RESET
+========================= */
+
 *{
     margin:0;
     padding:0;
@@ -24,18 +35,32 @@ body{
     line-height:1.6;
 }
 
+img{
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
 header{
     position:sticky;
     top:0;
     z-index:999;
     background:#061a3d;
-    box-shadow:0 3px 20px rgba(0,0,0,.15);
+    box-shadow:0 3px 20px rgba(0,0,0,.18);
 }
 
 .navbar{
     max-width:1200px;
     margin:auto;
     padding:17px 20px;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -53,9 +78,9 @@ header{
 
 nav a{
     color:white;
-    text-decoration:none;
-    margin-left:24px;
+    margin-left:22px;
     font-size:14px;
+    transition:.3s;
 }
 
 nav a:hover{
@@ -63,53 +88,79 @@ nav a:hover{
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
+
     min-height:680px;
+
     position:relative;
+
     display:flex;
     align-items:center;
-    background-image:url("images/hero-verification.jpg");
+
+    background-image:
+    url("images/hero-verification.jpg");
+
     background-size:cover;
     background-position:center;
 }
 
 .hero:before{
+
     content:"";
+
     position:absolute;
     inset:0;
-    background:linear-gradient(
+
+    background:
+    linear-gradient(
         90deg,
-        rgba(3,16,43,.96),
-        rgba(3,35,75,.78),
+        rgba(3,16,43,.97),
+        rgba(3,35,75,.80),
         rgba(3,35,75,.25)
     );
 }
 
 .hero-content{
+
     position:relative;
     z-index:2;
+
     width:1200px;
     max-width:90%;
+
     margin:auto;
+
     color:white;
 }
 
 .badge{
+
     display:inline-block;
+
     padding:8px 16px;
+
     border:1px solid rgba(255,255,255,.4);
+
     border-radius:30px;
+
     font-size:12px;
+
     letter-spacing:2px;
+
     margin-bottom:20px;
 }
 
 .hero h1{
+
     font-size:58px;
+
     line-height:1.1;
-    max-width:800px;
+
+    max-width:850px;
 }
 
 .hero h1 span{
@@ -117,35 +168,56 @@ nav a:hover{
 }
 
 .hero p{
-    max-width:650px;
+
+    max-width:680px;
+
     font-size:18px;
+
     color:#dceaff;
+
     margin:22px 0 30px;
 }
 
-.btn{
-    display:inline-block;
-    padding:14px 27px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-right:8px;
-    background:#20b8ff;
-    color:#061a3d;
-}
 
-.btn-outline{
-    background:transparent;
-    color:white;
-    border:1px solid #20b8ff;
+/* BUTTONS */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 27px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    margin-right:8px;
+
+    background:#20b8ff;
+
+    color:#061a3d;
+
+    transition:.3s;
 }
 
 .btn:hover{
-    opacity:.85;
+    transform:translateY(-2px);
+    opacity:.9;
+}
+
+.btn-outline{
+
+    background:transparent;
+
+    color:white;
+
+    border:1px solid #20b8ff;
 }
 
 
-/* COMMON */
+/* =========================
+   COMMON SECTIONS
+========================= */
 
 section{
     padding:85px 20px;
@@ -157,21 +229,31 @@ section{
 }
 
 .section-title{
+
     text-align:center;
-    max-width:720px;
+
+    max-width:750px;
+
     margin:0 auto 50px;
 }
 
 .section-title span{
+
     color:#079ddd;
+
     font-size:13px;
+
     font-weight:bold;
+
     letter-spacing:2px;
 }
 
 .section-title h2{
+
     color:#071a3d;
+
     font-size:38px;
+
     margin:10px 0;
 }
 
@@ -180,23 +262,36 @@ section{
 }
 
 
-/* SERVICES */
+/* =========================
+   SERVICES
+========================= */
 
 .services-section{
     background:#f5f8fc;
 }
 
 .services-grid{
+
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+
+    grid-template-columns:
+    repeat(3,1fr);
+
     gap:25px;
 }
 
 .service-card{
+
     background:white;
+
     border-radius:17px;
+
     overflow:hidden;
-    box-shadow:0 10px 35px rgba(0,30,80,.08);
+
+    box-shadow:
+    0 10px 35px
+    rgba(0,30,80,.08);
+
     transition:.3s;
 }
 
@@ -205,9 +300,13 @@ section{
 }
 
 .service-card img{
+
     width:100%;
+
     height:235px;
+
     object-fit:cover;
+
     display:block;
 }
 
@@ -216,77 +315,117 @@ section{
 }
 
 .service-content h3{
+
     color:#071a3d;
+
     font-size:21px;
+
     margin-bottom:8px;
 }
 
 .service-content p{
+
     color:#697586;
+
     font-size:14px;
 }
 
 
-/* ABOUT */
+/* =========================
+   ABOUT
+========================= */
 
 .about{
     background:white;
 }
 
 .about-grid{
+
     max-width:1200px;
+
     margin:auto;
+
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+    1fr 1fr;
+
     gap:60px;
+
     align-items:center;
 }
 
 .about-image img{
+
     width:100%;
+
     height:420px;
+
     object-fit:cover;
+
     border-radius:20px;
-    box-shadow:0 15px 40px rgba(0,30,80,.12);
+
+    box-shadow:
+    0 15px 40px
+    rgba(0,30,80,.12);
 }
 
-.about-content span,
-.feature-content span,
-.team-content span,
-.network-content span{
+.about-content span{
+
     color:#079ddd;
+
     font-weight:bold;
+
     font-size:13px;
+
     letter-spacing:2px;
 }
 
 .about-content h2{
+
     color:#071a3d;
+
     font-size:40px;
+
     margin:12px 0 18px;
 }
 
 .about-content p{
+
     color:#667085;
+
     margin-bottom:15px;
 }
 
 .about-box{
+
     margin-top:25px;
+
     border-left:4px solid #20b8ff;
+
     padding-left:16px;
 }
 
 
-/* FEATURE SECTIONS */
+/* =========================
+   FEATURE SECTIONS
+========================= */
 
 .feature{
+
     max-width:1200px;
+
     margin:auto;
+
     padding:90px 20px;
+
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+    1fr 1fr;
+
     gap:60px;
+
     align-items:center;
 }
 
@@ -299,16 +438,37 @@ section{
 }
 
 .feature-image img{
+
     width:100%;
+
     height:390px;
+
     object-fit:cover;
+
     border-radius:20px;
-    box-shadow:0 15px 40px rgba(0,30,80,.12);
+
+    box-shadow:
+    0 15px 40px
+    rgba(0,30,80,.12);
+}
+
+.feature-content span{
+
+    color:#079ddd;
+
+    font-weight:bold;
+
+    font-size:13px;
+
+    letter-spacing:2px;
 }
 
 .feature-content h2{
+
     color:#071a3d;
+
     font-size:38px;
+
     margin:12px 0 18px;
 }
 
@@ -317,68 +477,111 @@ section{
 }
 
 
-/* COVERAGE */
+/* =========================
+   COVERAGE
+========================= */
 
 .coverage{
     background:#f5f8fc;
 }
 
 .states{
+
     display:flex;
+
     flex-wrap:wrap;
+
     justify-content:center;
+
     gap:15px;
+
     max-width:900px;
+
     margin:auto;
 }
 
 .state{
+
     background:white;
+
     padding:16px 24px;
+
     border-radius:10px;
+
     border:1px solid #dce4ef;
+
     color:#123965;
+
     font-weight:bold;
-    box-shadow:0 5px 15px rgba(0,0,0,.04);
+
+    box-shadow:
+    0 5px 15px
+    rgba(0,0,0,.04);
 }
 
 .planning{
+
     max-width:800px;
+
     margin:30px auto 0;
+
     text-align:center;
+
     padding:17px;
+
     border-radius:10px;
+
     background:#eaf7ff;
+
     color:#07547b;
 }
 
 
-/* TEAM */
+/* =========================
+   TEAM
+========================= */
 
 .team-section{
     background:white;
 }
 
 .team-grid{
+
     max-width:900px;
+
     margin:auto;
+
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+    1fr 1fr;
+
     gap:25px;
 }
 
 .team-card{
+
     background:#f7faff;
+
     border:1px solid #e2e9f2;
+
     border-radius:18px;
+
     overflow:hidden;
+
     text-align:center;
-    box-shadow:0 10px 30px rgba(0,30,80,.06);
+
+    box-shadow:
+    0 10px 30px
+    rgba(0,30,80,.06);
 }
 
 .team-card img{
+
     width:100%;
+
     height:280px;
+
     object-fit:cover;
 }
 
@@ -387,41 +590,72 @@ section{
 }
 
 .team-card h3{
+
     color:#071a3d;
+
     font-size:23px;
 }
 
 .team-card p{
+
     color:#079ddd;
+
     font-weight:bold;
 }
 
 
-/* NETWORK */
+/* =========================
+   NETWORK
+========================= */
 
 .network{
     background:#f5f8fc;
 }
 
 .network-grid{
+
     max-width:1200px;
+
     margin:auto;
+
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+    1fr 1fr;
+
     gap:55px;
+
     align-items:center;
 }
 
 .network-image img{
+
     width:100%;
+
     height:400px;
+
     object-fit:cover;
+
     border-radius:20px;
 }
 
+.network-content span{
+
+    color:#079ddd;
+
+    font-weight:bold;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+}
+
 .network-content h2{
+
     color:#071a3d;
+
     font-size:40px;
+
     margin:12px 0 18px;
 }
 
@@ -430,60 +664,216 @@ section{
 }
 
 .network-states{
+
     display:flex;
+
     flex-wrap:wrap;
+
     gap:10px;
+
     margin-top:22px;
 }
 
 .network-states span{
+
     padding:9px 14px;
+
     background:#eaf7ff;
+
     color:#07547b;
+
     border-radius:7px;
+
     font-size:14px;
+
     font-weight:bold;
 }
 
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact{
+
     background:#061a3d;
+
     color:white;
+
     text-align:center;
 }
 
 .contact h2{
+
     font-size:40px;
+
     margin-bottom:12px;
 }
 
-.contact p{
+.contact-description{
+
     color:#c9d8eb;
-    max-width:700px;
-    margin:0 auto 25px;
+
+    max-width:750px;
+
+    margin:0 auto 35px;
 }
 
-.email{
-    display:inline-block;
-    padding:15px 25px;
-    background:white;
-    color:#061a3d;
-    border-radius:8px;
-    text-decoration:none;
+
+/* CONTACT CARDS */
+
+.contact-details{
+
+    max-width:1000px;
+
+    margin:0 auto 35px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:18px;
+}
+
+.contact-card{
+
+    background:
+    rgba(255,255,255,.08);
+
+    border:1px solid
+    rgba(255,255,255,.15);
+
+    border-radius:14px;
+
+    padding:22px;
+
+    color:white;
+}
+
+.contact-card .icon{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+}
+
+.contact-card h3{
+
+    font-size:17px;
+
+    margin-bottom:7px;
+}
+
+.contact-card a{
+
+    color:#20b8ff;
+
     font-weight:bold;
-    margin-bottom:25px;
+
+    word-break:break-word;
+}
+
+.contact-card p{
+    color:#d4e0ef;
+    font-size:14px;
 }
 
 
-/* FOOTER */
+/* OFFICE ADDRESS */
+
+.office-address{
+
+    max-width:800px;
+
+    margin:25px auto 35px;
+
+    padding:22px;
+
+    background:
+    rgba(255,255,255,.07);
+
+    border-radius:12px;
+
+    border:1px solid
+    rgba(255,255,255,.13);
+}
+
+.office-address h3{
+
+    margin-bottom:8px;
+
+    font-size:19px;
+}
+
+.office-address p{
+    color:#d5e1f0;
+}
+
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn{
+
+    display:inline-block;
+
+    padding:15px 27px;
+
+    border-radius:8px;
+
+    background:#20b8ff;
+
+    color:#061a3d;
+
+    font-weight:bold;
+
+    margin:5px;
+
+    transition:.3s;
+}
+
+.call-btn{
+
+    display:inline-block;
+
+    padding:15px 27px;
+
+    border-radius:8px;
+
+    background:white;
+
+    color:#061a3d;
+
+    font-weight:bold;
+
+    margin:5px;
+
+    transition:.3s;
+}
+
+.whatsapp-btn:hover,
+.call-btn:hover{
+
+    transform:translateY(-3px);
+
+    opacity:.9;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
+
     background:#031128;
+
     color:#9eb0c9;
+
     text-align:center;
-    padding:25px 15px;
+
+    padding:27px 15px;
+
     font-size:14px;
 }
 
@@ -491,8 +881,21 @@ footer strong{
     color:white;
 }
 
+.footer-email{
 
-/* MOBILE */
+    color:#20b8ff;
+
+    font-weight:bold;
+
+    display:inline-block;
+
+    margin-top:7px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:850px){
 
@@ -520,18 +923,26 @@ footer strong{
     .feature,
     .feature.reverse,
     .network-grid{
+
         grid-template-columns:1fr;
+
         direction:ltr;
+
         gap:30px;
     }
 
     .about-image img,
     .feature-image img,
     .network-image img{
+
         height:280px;
     }
 
     .team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-details{
         grid-template-columns:1fr;
     }
 
@@ -545,15 +956,23 @@ footer strong{
         font-size:30px;
     }
 
+    .btn{
+        margin-bottom:10px;
+    }
+
 }
+
 </style>
+
 </head>
 
 
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -564,12 +983,19 @@ Brothers <span>Finserv</span>
 </div>
 
 <nav>
+
 <a href="#home">Home</a>
+
 <a href="#services">Services</a>
+
 <a href="#about">About</a>
+
 <a href="#coverage">Coverage</a>
+
 <a href="#team">Team</a>
+
 <a href="#contact">Contact</a>
+
 </nav>
 
 </div>
@@ -577,7 +1003,9 @@ Brothers <span>Finserv</span>
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero" id="home">
 
@@ -588,15 +1016,22 @@ PROFESSIONAL VERIFICATION AGENCY
 </div>
 
 <h1>
+
 Brothers <span>Finserv</span><br>
+
 Verification Agency
+
 </h1>
 
 <p>
-Professional Document, Resident, Address, RCU,
-Business and Field Verification Services for
-Banks, NBFCs, Financial Institutions and Corporate Clients.
+
+Professional Document, Resident, Address,
+RCU, Business and Field Verification Services
+for Banks, NBFCs, Financial Institutions
+and Corporate Clients.
+
 </p>
+
 
 <a href="#services" class="btn">
 Explore Services
@@ -611,7 +1046,9 @@ Contact Us
 </section>
 
 
-<!-- SERVICES -->
+<!-- =========================
+     SERVICES
+========================= -->
 
 <section class="services-section" id="services">
 
@@ -636,14 +1073,19 @@ for banking, finance and corporate requirements.
 <div class="services-grid">
 
 
+<!-- DOCUMENT -->
+
 <div class="service-card">
 
-<img src="images/document-verification.jpg"
+<img
+src="images/document-verification.jpg"
 alt="Document Verification">
 
 <div class="service-content">
 
-<h3>Document Verification</h3>
+<h3>
+Document Verification
+</h3>
 
 <p>
 Professional document verification and
@@ -655,14 +1097,19 @@ field-level confirmation for assigned requirements.
 </div>
 
 
+<!-- RESIDENT -->
+
 <div class="service-card">
 
-<img src="images/resident-verification.jpg"
+<img
+src="images/resident-verification.jpg"
 alt="Resident Verification">
 
 <div class="service-content">
 
-<h3>Resident Verification</h3>
+<h3>
+Resident Verification
+</h3>
 
 <p>
 Residence, occupancy and customer location
@@ -674,14 +1121,19 @@ verification through professional field visits.
 </div>
 
 
+<!-- ADDRESS -->
+
 <div class="service-card">
 
-<img src="images/address-verification.jpg"
+<img
+src="images/address-verification.jpg"
 alt="Address Verification">
 
 <div class="service-content">
 
-<h3>Address Verification</h3>
+<h3>
+Address Verification
+</h3>
 
 <p>
 Physical address verification and field-level
@@ -693,14 +1145,19 @@ confirmation as per client requirements.
 </div>
 
 
+<!-- RCU -->
+
 <div class="service-card">
 
-<img src="images/rcu-verification.jpg"
+<img
+src="images/rcu-verification.jpg"
 alt="RCU Verification">
 
 <div class="service-content">
 
-<h3>RCU Verification</h3>
+<h3>
+RCU Verification
+</h3>
 
 <p>
 Reliable field support for RCU-related
@@ -712,14 +1169,19 @@ verification and investigation assignments.
 </div>
 
 
+<!-- BUSINESS -->
+
 <div class="service-card">
 
-<img src="images/business-verification.jpg"
+<img
+src="images/business-verification.jpg"
 alt="Business Verification">
 
 <div class="service-content">
 
-<h3>Business Verification</h3>
+<h3>
+Business Verification
+</h3>
 
 <p>
 Business existence, activity and establishment
@@ -731,14 +1193,19 @@ verification through field-level investigation.
 </div>
 
 
+<!-- FIELD -->
+
 <div class="service-card">
 
-<img src="images/field-investigation.jpg"
+<img
+src="images/field-investigation.jpg"
 alt="Field Investigation">
 
 <div class="service-content">
 
-<h3>Field Investigation</h3>
+<h3>
+Field Investigation
+</h3>
 
 <p>
 Customized field investigation and verification
@@ -749,6 +1216,7 @@ support for different client requirements.
 
 </div>
 
+
 </div>
 
 </div>
@@ -756,15 +1224,19 @@ support for different client requirements.
 </section>
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section class="about" id="about">
 
 <div class="about-grid">
 
+
 <div class="about-image">
 
-<img src="images/verification-officer.jpg"
+<img
+src="images/verification-officer.jpg"
 alt="Professional Verification Officer">
 
 </div>
@@ -772,31 +1244,45 @@ alt="Professional Verification Officer">
 
 <div class="about-content">
 
-<span>ABOUT US</span>
+<span>
+ABOUT US
+</span>
 
 <h2>
 Professional Field Verification Network
 </h2>
 
 <p>
-Brothers Finserv Verification Agency is a professional
-verification service agency providing field-based
-verification and investigation support.
+
+Brothers Finserv Verification Agency is a
+professional verification service agency
+providing field-based verification and
+investigation support.
+
 </p>
 
 <p>
-We handle Document Verification, Resident Verification,
-Address Verification, RCU Verification, Business
-Verification and other customized verification assignments.
+
+We handle Document Verification, Resident
+Verification, Address Verification,
+RCU Verification, Business Verification
+and other customized verification assignments.
+
 </p>
+
 
 <div class="about-box">
 
-<strong>Our Mission</strong>
+<strong>
+Our Mission
+</strong>
 
 <p>
-To provide dependable, professional and transparent
-verification support with strong field-level execution.
+
+To provide dependable, professional and
+transparent verification support with
+strong field-level execution.
+
 </p>
 
 </div>
@@ -808,31 +1294,41 @@ verification support with strong field-level execution.
 </section>
 
 
-<!-- BANKING -->
+<!-- =========================
+     BANKING
+========================= -->
 
 <section>
 
 <div class="feature">
 
+
 <div class="feature-image">
 
-<img src="images/banking-verification.jpg"
+<img
+src="images/banking-verification.jpg"
 alt="Banking Verification">
 
 </div>
 
+
 <div class="feature-content">
 
-<span>FINANCIAL SERVICES</span>
+<span>
+FINANCIAL SERVICES
+</span>
 
 <h2>
 Banking & Finance Verification Support
 </h2>
 
 <p>
-We provide professional field verification support
-for banking, NBFC and financial service requirements,
-subject to client assignment and applicable processes.
+
+We provide professional field verification
+support for banking, NBFC and financial
+service requirements, subject to client
+assignment and applicable processes.
+
 </p>
 
 </div>
@@ -842,31 +1338,41 @@ subject to client assignment and applicable processes.
 </section>
 
 
-<!-- OFFICE -->
+<!-- =========================
+     CORPORATE
+========================= -->
 
 <section style="background:white;">
 
 <div class="feature reverse">
 
+
 <div class="feature-image">
 
-<img src="images/office-verification.jpg"
+<img
+src="images/office-verification.jpg"
 alt="Corporate Verification">
 
 </div>
 
+
 <div class="feature-content">
 
-<span>CORPORATE SERVICES</span>
+<span>
+CORPORATE SERVICES
+</span>
 
 <h2>
 Business & Corporate Verification
 </h2>
 
 <p>
-Our field network supports business establishment,
-address and other verification requirements for
-corporate and financial clients.
+
+Our field network supports business
+establishment, address and other
+verification requirements for corporate
+and financial clients.
+
 </p>
 
 </div>
@@ -876,15 +1382,20 @@ corporate and financial clients.
 </section>
 
 
-<!-- COVERAGE -->
+<!-- =========================
+     COVERAGE
+========================= -->
 
 <section class="coverage" id="coverage">
 
 <div class="container">
 
+
 <div class="section-title">
 
-<span>OUR COVERAGE</span>
+<span>
+OUR COVERAGE
+</span>
 
 <h2>
 Multi-State Verification Network
@@ -899,27 +1410,41 @@ Currently operational across the following states.
 
 <div class="states">
 
-<div class="state">Bihar</div>
+<div class="state">
+Bihar
+</div>
 
-<div class="state">Assam</div>
+<div class="state">
+Assam
+</div>
 
-<div class="state">Jharkhand</div>
+<div class="state">
+Jharkhand
+</div>
 
-<div class="state">West Bengal</div>
+<div class="state">
+West Bengal
+</div>
 
-<div class="state">Uttar Pradesh</div>
+<div class="state">
+Uttar Pradesh
+</div>
 
-<div class="state">Madhya Pradesh</div>
+<div class="state">
+Madhya Pradesh
+</div>
 
 </div>
 
 
 <div class="planning">
 
-<strong>Expansion Planning:</strong>
+<strong>
+Expansion Planning:
+</strong>
 
-Our network expansion into additional states
-is currently under planning.
+Our network expansion into additional
+states is currently under planning.
 
 </div>
 
@@ -928,15 +1453,20 @@ is currently under planning.
 </section>
 
 
-<!-- TEAM -->
+<!-- =========================
+     TEAM
+========================= -->
 
 <section class="team-section" id="team">
 
 <div class="container">
 
+
 <div class="section-title">
 
-<span>OUR LEADERSHIP</span>
+<span>
+OUR LEADERSHIP
+</span>
 
 <h2>
 Meet Our Team
@@ -952,32 +1482,46 @@ The leadership team behind Brothers Finserv.
 <div class="team-grid">
 
 
+<!-- AKASH -->
+
 <div class="team-card">
 
-<img src="images/team-verification.jpg"
-alt="Brothers Finserv Team">
+<img
+src="images/team-verification.jpg"
+alt="Akash Kumar">
 
 <div class="team-card-content">
 
-<h3>Akash Kumar</h3>
+<h3>
+Akash Kumar
+</h3>
 
-<p>Owner</p>
+<p>
+Owner
+</p>
 
 </div>
 
 </div>
 
 
+<!-- PANKAJ -->
+
 <div class="team-card">
 
-<img src="images/verification-officer.jpg"
-alt="Credit Head">
+<img
+src="images/verification-officer.jpg"
+alt="Pankaj Kumar">
 
 <div class="team-card-content">
 
-<h3>Pankaj Kumar</h3>
+<h3>
+Pankaj Kumar
+</h3>
 
-<p>Credit Head</p>
+<p>
+Credit Head
+</p>
 
 </div>
 
@@ -991,15 +1535,19 @@ alt="Credit Head">
 </section>
 
 
-<!-- INDIA NETWORK -->
+<!-- =========================
+     INDIA NETWORK
+========================= -->
 
 <section class="network">
 
 <div class="network-grid">
 
+
 <div class="network-image">
 
-<img src="images/india-network.jpg"
+<img
+src="images/india-network.jpg"
 alt="India Verification Network">
 
 </div>
@@ -1007,33 +1555,45 @@ alt="India Verification Network">
 
 <div class="network-content">
 
-<span>STATE NETWORK</span>
+<span>
+STATE NETWORK
+</span>
 
 <h2>
 Growing Across India
 </h2>
 
 <p>
-Brothers Finserv is currently operating across
-Bihar, Assam, Jharkhand, West Bengal, Uttar Pradesh
-and Madhya Pradesh.
+
+Brothers Finserv is currently operating
+across Bihar, Assam, Jharkhand,
+West Bengal, Uttar Pradesh and
+Madhya Pradesh.
+
 </p>
+
 
 <div class="network-states">
 
 <span>Bihar</span>
+
 <span>Assam</span>
+
 <span>Jharkhand</span>
+
 <span>West Bengal</span>
+
 <span>Uttar Pradesh</span>
+
 <span>Madhya Pradesh</span>
 
 </div>
 
+
 <p style="margin-top:20px;">
 
-Our expansion into additional states is currently
-in the planning stage.
+Our expansion into additional states
+is currently in the planning stage.
 
 </p>
 
@@ -1044,60 +1604,192 @@ in the planning stage.
 </section>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section class="contact" id="contact">
 
 <div class="container">
 
+
 <h2>
 Let's Work Together
 </h2>
 
-<p>
-For verification requirements, business enquiries,
-financial institution assignments and partnership
-opportunities, please contact Brothers Finserv.
+
+<p class="contact-description">
+
+For verification requirements, business
+enquiries, financial institution assignments
+and partnership opportunities, please
+contact Brothers Finserv Verification Agency.
+
 </p>
 
 
-<a class="email"
-href="mailto:akashbrothers007@gmail.com">
+<!-- CONTACT DETAILS -->
 
-✉ akashbrothers007@gmail.com
+<div class="contact-details">
+
+
+<!-- WHATSAPP -->
+
+<div class="contact-card">
+
+<div class="icon">
+💬
+</div>
+
+<h3>
+WhatsApp
+</h3>
+
+<p>
+For WhatsApp enquiries
+</p>
+
+<a
+href="https://wa.me/919798530587"
+target="_blank">
+
++91 97985 30587
 
 </a>
 
-<br>
+</div>
 
 
-<a class="btn"
-href="mailto:akashbrothers007@gmail.com">
+<!-- CALL -->
 
-Send Enquiry
+<div class="contact-card">
+
+<div class="icon">
+📞
+</div>
+
+<h3>
+Direct Call
+</h3>
+
+<p>
+For direct contact
+</p>
+
+<a
+href="tel:+917759870554">
+
++91 77598 70554
 
 </a>
+
+</div>
+
+
+<!-- EMAIL -->
+
+<div class="contact-card">
+
+<div class="icon">
+✉️
+</div>
+
+<h3>
+Email
+</h3>
+
+<p>
+Business enquiries
+</p>
+
+<a
+href="mailto:akashbrothers007@gmail.com">
+
+akashbrothers007@gmail.com
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- OFFICE ADDRESS -->
+
+<div class="office-address">
+
+<h3>
+📍 Office Address
+</h3>
+
+<p>
+
+Sharda Complex, Pali Road,<br>
+
+Dehri On Sone,<br>
+
+Patna Division - 821307
+
+</p>
+
+</div>
+
+
+<!-- ACTION BUTTONS -->
+
+<a
+class="whatsapp-btn"
+href="https://wa.me/919798530587"
+target="_blank">
+
+💬 WhatsApp Us
+
+</a>
+
+
+<a
+class="call-btn"
+href="tel:+917759870554">
+
+📞 Call Directly
+
+</a>
+
+
+<a
+class="call-btn"
+href="mailto:akashbrothers007@gmail.com">
+
+✉️ Send Email
+
+</a>
+
 
 </div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
 <p>
-© 2026 <strong>Brothers Finserv Verification Agency</strong>.
+
+© 2026
+<strong>
+Brothers Finserv Verification Agency
+</strong>
+
 All Rights Reserved.
+
 </p>
+
 
 <p>
-Professional Verification & Field Investigation Services
-</p>
 
-</footer>
-
-
-</body>
-  </html>
+Professional Verification &
+Field I
